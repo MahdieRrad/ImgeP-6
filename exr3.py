@@ -3,7 +3,9 @@ import cv2
 import numpy as np
 
 img_A=cv2.imread('building.tif',0)
+img_A=cv2.resize(img_A,(250,250))
 img_B=cv2.imread('building.tif',0)
+img_B=cv2.resize(img_B,(250,250))
 
 
 Res_A=np.zeros(img_A.shape)
